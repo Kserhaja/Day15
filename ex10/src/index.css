@@ -1,0 +1,55 @@
+* { box-sizing: border-box;}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  padding: 0.5rem;
+  font-family: Verdana, Geneva, sans-serif;
+  color: azure;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.5; 
+  text-align: center;
+}
+
+p {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/* First the Grid */
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+  grid-gap: 0.1rem;
+  justify-items: left;
+  margin: 2;
+  padding: 5;
+}
+
+/* The Picture Frame */
+.row-frame {
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  background-color: none;
+  color: #131111;
+}
+
+/* The Images */
+.container-img {
+  max-width: 100%;
+  height: none;
+  object-fit: cover;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.container-img:hover {
+  opacity: .7;
+}
